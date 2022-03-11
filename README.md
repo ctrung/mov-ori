@@ -10,3 +10,5 @@ git push new-origin --mirror
 ```
 
 Atlassian procedure to pick the desired refs : https://www.atlassian.com/git/tutorials/git-move-repository
+
+NB : un `git remote update` côté client resynchronise le repo local, équivalent à un `rmdir` et de nouveau un `git clone --mirror`.
