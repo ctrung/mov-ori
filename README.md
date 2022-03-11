@@ -9,13 +9,13 @@ git remote add new-origin <url_of_new_repo>
 git push new-origin --mirror
 ```
 
-Atlassian procedure to pick the desired refs : https://www.atlassian.com/git/tutorials/git-move-repository
+Atlassian procedure to pick only some ref subset : https://www.atlassian.com/git/tutorials/git-move-repository
 
 **Remarks**
 
 1. `git remote update` will resynchronise everything in the mirrored repo, same as `rmdir` and `git clone --mirror` again.
 
-1. Some ref types can't be pushed (eg. read only pull request refs, etc...).
+1. Pushing some ref types might be rejected (eg. read only pull request refs, etc...).
 ```sh
 $ git push new-remote --mirror
 Enumerating objects: 13, done.
